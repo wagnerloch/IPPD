@@ -6,7 +6,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int div=1,i,j,n;
+	int div=1,i,j,n;
 
    if(argc >= 2){
         n = atoi(argv[1]); 
@@ -20,16 +20,16 @@ int main(int argc, char const *argv[])
     #pragma omp for schedule(static)
     for(i = 1; i <= n; i++){
       div=1;
-    for(j = 2; j < i; j++){
-       if(i % j == 0){
-       		div=0;
-       }
-    }
+    	for(j = 2; j < i; j++){
+       		if(i % j == 0){
+       			div=0;
+       		}
+    	}
 
-    if(div){
-    	printf("%i ", i);
-    }
-}
+    	if(div){
+    		printf("%i ", i);
+    	}
+	}
     printf("]\n");
 
 	return 0;

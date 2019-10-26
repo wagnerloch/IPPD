@@ -15,7 +15,7 @@ long long int sum(int *v,long long int n){
 
 		for(i = myid; i < n; i += nthreads)
 			#pragma omp critical
-		sum+=v[i];
+			sum+=v[i];
     }
 	return sum;
 }
