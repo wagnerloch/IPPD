@@ -1,6 +1,8 @@
 # OpenMP
 
 Compilação:
+      
+      gcc -fopenmp openMPhello.c -o out
 
       gcc -fopenmp nomeArquivo.c 
   
